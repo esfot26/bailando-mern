@@ -1,0 +1,95 @@
+.song-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+  .form-group label {
+    display: block;
+    color: #000000;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    color: #000000;
+    background-color: white;
+  }
+  
+  .btn-success {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+    width: 150px;
+    margin: 10px auto; 
+    border-radius: 4px; 
+    transition: background-color 0.3s; 
+    font-size: 16px; 
+    font-weight: bold; 
+    text-align: center; 
+    display: block; 
+  
+  label{
+    color: #000000;
+  }
+
+
+  .labelBuscar {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+  }
+
+
+  .inptBuscar {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+
+  h1{
+    padding: 0px;
+  }
+
+
+  .btn-success:hover {
+    background-color: #45a049; 
+  }
+  
+  @media (max-width: 600px) {
+    .song-form {
+      padding: 15px; 
+    }
+  
+    .song-form h1 {
+      font-size: 20px; 
+    }
+  
+    .inputBuscar {
+      font-size: 14px; 
+    }
+  
+    .btn-primary {
+      font-size: 14px; 
+    }
+  }
+
+}

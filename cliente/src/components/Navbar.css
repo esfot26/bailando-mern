@@ -1,0 +1,21 @@
+/* Navbar.css */
+.custom-navbar {
+  background-color: #333; /* Color de fondo oscuro */
+}
+
+.navbar-nav .nav-link {
+  color: white; /* Color de texto blanco */
+  font-weight: bold; /* Negrita */
+  margin: 0 100px; /* Espaciado entre elementos */
+  font-size: 18px;
+}
+
+
+.navbar-brand{
+  background-color: aliceblue;
+  color: white;
+}
+
+.container-fluid{
+  background-color: #333333;
+} 
