@@ -1,0 +1,76 @@
+.edit-song {
+    background-color: #f9f9f9; /* Fondo claro */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 100%;
+    margin: 0 auto; /* Centrar en la página */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); Sombra para darle un efecto de tarjeta */
+  }
+  
+  .edit-song h3 {
+    text-align: center;
+    color: #333; /* Color de título */
+    margin-bottom: 20px;
+  }
+  
+  .edit-song form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+  }
+  
+  .edit-song label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  .edit-song input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    color: black;
+    background-color: white;
+  }
+  
+  .edit-song input:focus {
+    border-color: #007bff; /* Cambiar el borde al enfocarse */
+    outline: none;
+  }
+  
+  .edit-song-actions {
+    display: flex;
+    padding: 10px ;
+    gap: 10px;
+  }
+  
+  .edit-song-actions button {
+    padding: 10px 15px ;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .edit-song-actions button[type="submit"] {
+    background-color: #28a745; /* Botón guardar: verde */
+    color: white;
+  }
+  
+  .edit-song-actions button[type="submit"]:hover {
+    background-color: #218838; /* Efecto hover para el botón guardar */
+  }
+  
+  .edit-song-actions button[type="button"] {
+    background-color: #dc3545; /* Botón cancelar: rojo */
+    color: white;
+  }
+  
+  .edit-song-actions button[type="button"]:hover {
+    background-color: #c82333; /* Efecto hover para el botón cancelar */
+  }
+  

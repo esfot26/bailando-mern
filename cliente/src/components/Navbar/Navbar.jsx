@@ -23,6 +23,7 @@ const Navbar = () => {
             <li className="nav-item">
               <Link className="nav-link" to="/add-playlist">Add Playlist</Link>
             </li>
+            
           </ul>
         </div>
       </div>

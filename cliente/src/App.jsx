@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import axios from 'axios';
-import Navbar from './components/Navbar';
-import AddPlaylist from './components/AddPlaylist';
-import Playlist from './components/Playlist';
-import Song from './components/Song';
-import AddSong from './components/AddSong';
+import Navbar from './components/Navbar/Navbar';
+import AddPlaylist from './components/Playlist/AddPlaylist';
+import Playlist from './components/Playlist/Playlist';
+import Song from './components/Song/Song';
+import AddSong from './components/Song/AddSong';
 import Home from './components/Home';
+
 import './App.css';
 
 const App = () => {

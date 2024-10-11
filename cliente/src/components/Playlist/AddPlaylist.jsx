@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import './AddPlaylist.css';
 
 const AddPlaylist = ({ onAdd }) => {
   const [songs, setSongs] = useState([]);
@@ -15,9 +16,9 @@ const AddPlaylist = ({ onAdd }) => {
         const response = await axios.get('http://localhost:8000/api/musica');
         setSongs(response.data);
         setLoading(false);
-        console.log (response.data);
       } catch (error) {
         setModalMessage('Error en la conexión. Por favor, verifica tu conexión y vuelve a intentarlo.');
+        setShowModal(true);
       }
     };
 
@@ -44,10 +45,8 @@ const AddPlaylist = ({ onAdd }) => {
       return;
     }
 
-    // Llama a onAdd con el nombre de la playlist y las canciones seleccionadas
     onAdd(playlistName, selectedSongs);
-    
-    // Restablece los estados
+
     setSelectedSongs([]);
     setPlaylistName('');
     setModalMessage('Playlist agregada exitosamente!');
@@ -57,10 +56,10 @@ const AddPlaylist = ({ onAdd }) => {
   if (loading) return <p className="text-center">Cargando canciones...</p>;
 
   return (
-    <div className="container my-5">
-      <div className="card shadow-sm">
-        <div className="card-body">
-          <h2 className="card-title">Crear nueva Playlist</h2>
+    <div className="add-playlist">
+      <div className="card">
+        <div className='card-body'>
+          <h2 className="card-title text-center">Crear nueva Playlist</h2>
           <div className="mb-4">
             <label htmlFor="playlistName" className="form-label">
               Nombre de la Playlist:
@@ -100,7 +99,6 @@ const AddPlaylist = ({ onAdd }) => {
         </div>
       </div>
 
-      {/* Modal de Bootstrap */}
       <div className={`modal fade ${showModal ? 'show' : ''}`} style={{ display: showModal ? 'block' : 'none' }} tabIndex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden={!showModal}>
         <div className="modal-dialog" role="document">
           <div className="modal-content">
@@ -119,8 +117,6 @@ const AddPlaylist = ({ onAdd }) => {
           </div>
         </div>
       </div>
-
-      {/* Fondo oscuro del modal */}
       {showModal && <div className="modal-backdrop fade show"></div>}
     </div>
   );

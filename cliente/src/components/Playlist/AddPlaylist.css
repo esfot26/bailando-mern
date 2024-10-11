@@ -1,0 +1,111 @@
+.add-playlist {
+    background-color: #F8F9FA; /* Fondo claro */
+    max-width: 800px; /* Ajusta el ancho máximo según tus necesidades */
+    margin: 0 auto; /* Centrar en la página */
+}
+
+.add-playlist h2 {
+    text-align: center;
+    color: #333; /* Color de título */
+    margin-bottom: 20px;
+}
+
+.add-playlist .form-label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.add-playlist input[type="text"] {
+    width: 50%; /* Ancho del campo de texto */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    color: black;
+    background-color: #F8F9FA;
+    margin: 0 auto; /* Centrar horizontalmente */
+    display: block; /* Asegurarse de que sea un bloque para centrar */
+}
+
+.add-playlist input[type="text"]:focus {
+    border-color: #007bff; /* Cambiar el borde al enfocarse */
+    outline: none;
+}
+
+.card-body{
+    background-color: #F8F9FA;
+}
+
+.add-playlist .list-group {
+    margin-bottom: 20px; /* Espacio entre la lista y el botón */
+    width: 50%; /* Ancho de la lista */
+    margin: 0 auto; /* Centrar horizontalmente */
+}
+
+.add-playlist .list-group-item {
+    display: flex;
+    align-items: center; /* Alinear verticalmente los elementos */
+    padding: 10px 15px; /* Espaciado interno */
+    border: 1px solid #ddd; /* Borde de los elementos de la lista */
+    border-radius: 4px; /* Esquinas redondeadas */
+    margin-bottom: 10px; /* Espacio entre los elementos de la lista */
+    transition: background-color 0.3s; /* Transición suave al pasar el mouse */
+}
+
+
+
+.add-playlist .btn-success {
+    padding: 8px 12px; /* Reduce el padding para achicar el botón */
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #28a745; /* Botón crear playlist: verde */
+    color: white;
+    transition: background-color 0.3s;
+    width: 15%; /* Ancho del botón */
+}
+
+.card{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.add-playlist .btn-success:hover {
+    background-color: #218838; /* Efecto hover para el botón crear playlist */
+}
+
+.modal-content {
+    border-radius: 8px; /* Esquinas redondeadas para el modal */
+}
+
+.modal-header {
+    border-bottom: none; /* Sin borde en la parte inferior del header */
+}
+
+.modal-title {
+    color: #333; /* Color del título del modal */
+}
+
+.modal-footer {
+    border-top: none; /* Sin borde en la parte superior del footer */
+}
+
+.modal-footer .btn-secondary {
+    background-color: #6c757d; /* Color del botón cerrar */
+    color: white;
+}
+
+.modal-footer .btn-secondary:hover {
+    background-color: #5a6268; /* Efecto hover para el botón cerrar */
+}
+
+.card-body{
+    background-color: #F8F9FA;
+    max-width: 800px; /* Ajusta el ancho máximo según tus necesidades */
+
+}
+

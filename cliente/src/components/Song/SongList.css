@@ -142,4 +142,32 @@
       font-size: 14px; /* Tamaño de fuente más pequeño para los detalles */
     }
   }
+
+  .edit-button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .edit-button:hover {
+    background-color: #0056b3;
+  }
   
+  .delete-button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+  }
+
+  .delete-button:hover {
+    background-color: #b71c1c;
+  }
